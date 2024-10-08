@@ -205,9 +205,9 @@ Title.Active = true
 Title.BackgroundColor3 = Color3.fromRGB(36,36,37)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
-Title.Font = Enum.Font.SourceSans
-Title.TextSize = 18
-Title.Text = "Infinite Yield FE v" .. currentVersion
+Title.Font = Enum.Font.Gotham
+Title.TextSize = 20
+Title.Text = "Sunlight Hub Admin v" .. currentVersion
 
 do
 	local emoji = ({
@@ -264,7 +264,7 @@ Cmdbar.TextXAlignment = Enum.TextXAlignment.Left
 Cmdbar.TextColor3 = Color3.new(1, 1, 1)
 Cmdbar.Text = ""
 Cmdbar.ZIndex = 10
-Cmdbar.PlaceholderText = "Command Bar"
+Cmdbar.PlaceholderText = "Tip: Use ;fastkill to kill someone"
 
 CMDsF.Name = "CMDs"
 CMDsF.Parent = Holder
@@ -618,7 +618,7 @@ Credits.Position = UDim2.new(0, 0, 0.9, 30)
 Credits.Size = UDim2.new(0, 250, 0, 20)
 Credits.Font = Enum.Font.SourceSansLight
 Credits.FontSize = Enum.FontSize.Size18
-Credits.Text = "Edge // Zwolf // Moon // Toon"
+Credits.Text = "Alodozhynn // Edge // Zwolf // Moon // Toon"
 Credits.TextColor3 = Color3.new(1, 1, 1)
 Credits.ZIndex = 10
 
@@ -4531,13 +4531,13 @@ CMDs[#CMDs + 1] = {NAME = 'staffwatch', DESC = 'Notify if a staff member of the 
 CMDs[#CMDs + 1] = {NAME = 'unstaffwatch', DESC = 'Disable Staffwatch'}
 CMDs[#CMDs + 1] = {NAME = 'attach [player] (TOOL)', DESC = 'Attaches you to a player (YOU NEED A TOOL)'}
 CMDs[#CMDs + 1] = {NAME = 'kill [player] (TOOL)', DESC = 'Kills a player (YOU NEED A TOOL)'}
-CMDs[#CMDs + 1] = {NAME = 'fastkill [player] (TOOL)', DESC = 'Kills a player (less reliable) (YOU NEED A TOOL)'}
+CMDs[#CMDs + 1] = {NAME = 'fastkill [player] (TOOL)', DESC = '[OP] it kills someone but need tool (less reliable) (YOU NEED A TOOL)'}
 CMDs[#CMDs + 1] = {NAME = 'handlekill / hkill [player] (TOOL)', DESC = 'Kills a player using tool damage (YOU NEED A TOOL)'}
 CMDs[#CMDs + 1] = {NAME = 'bring [player] (TOOL)', DESC = 'Brings a player (YOU NEED A TOOL)'}
-CMDs[#CMDs + 1] = {NAME = 'fastbring [player] (TOOL)', DESC = 'Brings a player (less reliable) (YOU NEED A TOOL)'}
+CMDs[#CMDs + 1] = {NAME = 'fastbring [player] (TOOL)', DESC = '[OP] Brings a player (less reliable) (YOU NEED A TOOL)'}
 CMDs[#CMDs + 1] = {NAME = 'teleport / tp [player] [player] (TOOL)', DESC = 'Teleports a player to another player (YOU NEED A TOOL)'}
 CMDs[#CMDs + 1] = {NAME = 'fastteleport / fasttp [player] [player] (TOOL)', DESC = 'Teleports a player to another player (less reliable) (YOU NEED A TOOL)'}
-CMDs[#CMDs + 1] = {NAME = 'fling', DESC = 'Flings anyone you touch'}
+CMDs[#CMDs + 1] = {NAME = 'fling', DESC = 'nah is bad but just cheese anyone you touch'}
 CMDs[#CMDs + 1] = {NAME = 'unfling', DESC = 'Disables the fling command'}
 CMDs[#CMDs + 1] = {NAME = 'flyfling', DESC = 'Basically the invisfling command but not invisible'}
 CMDs[#CMDs + 1] = {NAME = 'unflyfling', DESC = 'Disables the flyfling command'}
@@ -4550,13 +4550,13 @@ CMDs[#CMDs + 1] = {NAME = 'loopoof', DESC = 'Loops everyones character sounds (e
 CMDs[#CMDs + 1] = {NAME = 'unloopoof', DESC = 'Stops the oof chaos'}
 CMDs[#CMDs + 1] = {NAME = 'muteboombox [player]', DESC = 'Mutes someones boombox'}
 CMDs[#CMDs + 1] = {NAME = 'unmuteboombox [player]', DESC = 'Unmutes someones boombox'}
-CMDs[#CMDs + 1] = {NAME = 'hitbox [player] [size]', DESC = 'Expands the hitbox for players HumanoidRootPart (default is 1)'}
+CMDs[#CMDs + 1] = {NAME = 'hitbox [player] [size]', DESC = 'yeah it changethe hitbox for players humanoidrootpart (default is 1)'}
 CMDs[#CMDs + 1] = {NAME = 'headsize [player] [size]', DESC = 'Expands the head size for players Head (default is 1)'}
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'reset', DESC = 'Resets your character normally'}
 CMDs[#CMDs + 1] = {NAME = 'respawn', DESC = 'Respawns you'}
 CMDs[#CMDs + 1] = {NAME = 'refresh / re', DESC = 'Respawns and brings you back to the same position'}
-CMDs[#CMDs + 1] = {NAME = 'god', DESC = 'Makes your character difficult to kill in most games'}
+CMDs[#CMDs + 1] = {NAME = 'god', DESC = 'nah it makes kill hard'}
 CMDs[#CMDs + 1] = {NAME = 'invisible / invis', DESC = 'Makes you invisible to other players'}
 CMDs[#CMDs + 1] = {NAME = 'visible / vis', DESC = 'Makes you visible to other players'}
 CMDs[#CMDs + 1] = {NAME = 'toolinvisible / toolinvis / tinvis', DESC = 'Makes you invisible to other players and able to use tools'}
@@ -4579,7 +4579,7 @@ CMDs[#CMDs + 1] = {NAME = 'unnosit', DESC = 'Disables nosit'}
 CMDs[#CMDs + 1] = {NAME = 'jump', DESC = 'Makes your character jump'}
 CMDs[#CMDs + 1] = {NAME = 'infinitejump / infjump', DESC = 'Allows you to jump before hitting the ground'}
 CMDs[#CMDs + 1] = {NAME = 'uninfinitejump / uninfjump', DESC = 'Disables infjump'}
-CMDs[#CMDs + 1] = {NAME = 'flyjump', DESC = 'Allows you to hold space to fly up'}
+CMDs[#CMDs + 1] = {NAME = 'flyjump', DESC = 'Allows you to do happy mod fly lol'}
 CMDs[#CMDs + 1] = {NAME = 'unflyjump', DESC = 'Disables flyjump'}
 CMDs[#CMDs + 1] = {NAME = 'autojump / ajump', DESC = 'Automatically jumps when you run into an object'}
 CMDs[#CMDs + 1] = {NAME = 'unautojump / unajump', DESC = 'Disables autojump'}
@@ -6318,7 +6318,7 @@ addcmd('discord', {'support', 'help'}, function(args, speaker)
 		toClipboard('https://discord.com/invite/dYHag43eeU')
 		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/dYHag43eeU')
 	else
-		notify('Discord Invite', 'discord.gg/dYHag43eeU')
+		notify('Discord Invite', 'not copied but is discord.gg/dYHag43eeU')
 	end
 	if httprequest then
 		httprequest({
@@ -7645,7 +7645,8 @@ addcmd("savegame", {"saveplace"}, function(args, speaker)
         saveinstance()
         notify("Game Saved", "Saved place to the workspace folder within your exploit folder.")
     else
-        notify("Incompatible Exploit", "Your exploit does not support this command (missing saveinstance)")
+saveinstance()
+        notify("This is a bad function", "That function needs to be fixed lol")
     end
 end)
 
@@ -12648,5 +12649,5 @@ task.spawn(function()
 	Credits:Destroy()
 	IntroBackground:Destroy()
 	minimizeHolder()
-	if IsOnMobile then notify("Unstable Device", "On mobile, Infinite Yield may have issues or features that are not functioning correctly.") end
+	if IsOnMobile then notify("Sunlight Hub Admin", "Now enjoy this version, thanks for using!") end
 end)
